@@ -18,6 +18,10 @@ Install `vue-ts-starter` with pnpm
 
 ```bash
  git clone https://github.com/dxphilo/vue-ts-starter.git
+
+```
+
+```bash
   cd vue-ts-starter
 ```
 
