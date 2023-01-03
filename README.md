@@ -17,12 +17,12 @@ Ready to go installed packages
 Install `vue-ts-starter` with pnpm
 
 ```bash
- git clone https://github.com/dxphilo/vue-ts-starter.git
+ git clone https://github.com/lofyhub/vue-ts.git
 
 ```
 
 ```bash
-  cd vue-ts-starter
+  cd vue-ts
 ```
 
 ## Project setup
