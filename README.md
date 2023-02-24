@@ -14,7 +14,7 @@ Ready to go installed packages
 
 ## Installation
 
-Install `vue-ts-starter` with pnpm
+Install `vue-ts`
 
 ```bash
  git clone https://github.com/lofyhub/vue-ts.git
@@ -34,7 +34,7 @@ pnpm install
 ### Compiles and hot-reloads for development
 
 ```
-pnpm run serve
+pnpm run dev
 ```
 
 ### Compiles and minifies for production

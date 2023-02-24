@@ -1,16 +1,21 @@
 import { defineStore } from "pinia";
+import { computed, ref } from "vue";
 
-export interface RootState {
-  loggedIn: boolean;
-}
+import { session } from "@/types";
 
-export const useRootStore = defineStore(`rootStore`, {
-  state: (): RootState => {
-    return {
-      loggedIn: false,
-    };
-  },
-  persist: true,
-  actions: {},
-  getters: {},
+export const useRootStore = defineStore(`rootStore`, () => {
+  const session = ref<session>({
+    userName: "vue-ts",
+    id: "1234",
+    email: "email@test.com",
+    isSubscribed: false,
+  });
+
+  const isSubscribed = computed(() => session.value.isSubscribed);
+
+  function getName(): string {
+    return session.value.userName;
+  }
+
+  return { session, getName, isSubscribed };
 });
