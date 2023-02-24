@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import Toastify from "toastify-js";
 
-import SuccessAvatar from "@/assets/images/util/success.png";
+import SuccessAvatar from "@/assets/images/success.png";
 
 export function toastSuccess(text: string) {
   Toastify({
     text,
     duration: 100000,
-    gravity: `bottom`, // `top` or `bottom`
+    gravity: `bottom`,
     position: `left`,
     avatar: SuccessAvatar,
     style: {
